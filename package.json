@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Doki1992/SA_tarea_4/issues"
   },
-  "homepage": "https://github.com/Doki1992/SA_tarea_4#readme"
+  "homepage": "https://github.com/Doki1992/SA_tarea_4#readme",
+  "dependencies": {
+    "gulpfile.js": "^3.0.4"
+  }
 }

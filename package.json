@@ -1,0 +1,19 @@
+{
+  "name": "tarea4",
+  "version": "1.0.0",
+  "description": "tarea 6",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doki1992/SA_tarea_4.git"
+  },
+  "author": "Mike Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doki1992/SA_tarea_4/issues"
+  },
+  "homepage": "https://github.com/Doki1992/SA_tarea_4#readme"
+}

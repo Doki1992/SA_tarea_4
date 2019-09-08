@@ -1,7 +1,8 @@
 
 const eslint = require('gulp-eslint');
-gulp       = require('gulp');
-var nodemon = require('gulp-nodemon');
+gulp         = require('gulp');
+var nodemon  = require('gulp-nodemon');
+const zip    = require('gulp-zip');
 
 
 function defaultTask(cb) {
@@ -76,5 +77,11 @@ gulp.task('lint', function(){
     })).pipe(eslint.formatEach('compact', process.stderr));
 });
 
+gulp.task("build", function (){
+	return gulp.src(["**/**", "!**/node_modules"])
+	.pipe(zip("archive.zip"))
+	.pipe(gulp.dest("dist"));
+})
 
-gulp.task('build', gulp.series('lint', 'esb', 'solicitud_cliente', 'aviso_piloto'));
+
+gulp.task('build', gulp.series('lint', 'build'));
